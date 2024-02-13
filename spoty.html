@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <title>Spotify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            background: linear-gradient(180deg, rgba(41,41,41,1) 0%, rgba(0,0,0,1) 100%);
+        }
+        
+        .banner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100px;
+          padding: 0 20px;
+          background-color: #000000;
+          color: #ffffff;
+        }
+
+        .container {
+            background-color: #000000;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            max-width: 734px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin: 48px 0px;
+            font-family: 'Archivo Black', sans-serif;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 4px;  
+        }
+
+        .container input[type="submit"] {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border: 1px solid #4B4B4B;
+            cursor: pointer;
+            width: 50%;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .container input[type="submit"]:hover {
+            border: 1px solid white;
+
+        }
+
+        .redes{
+        	background-color:black;
+            color: white;
+            padding: 0px 0px;
+            margin: 80px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .login{
+        	color: #000000;
+            color: white;
+            padding: 0px 0px;
+            margin: 80px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 50px;
+            text-align: center;
+        }
+        .form-switch input [type="checkbox"]{
+            background-color: var(--essential-subdued, #878787);
+            justify-items: center;
+        }
+        .recaptcha-badge {
+            
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background-color: #000000;
+            text-align: center;
+            z-index: 1000;
+        }
+        .recaptcha-badge__text {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+        .boton{
+            color: #FFFFFF;
+        }
+        .submit-facebook{
+          padding-right: 10px; /* Ajusta según sea necesario para dar espacio al icono */
+          background-image: url(https://cdn-icons-png.freepik.com/512/5968/5968764.png?ga=GA1.1.103940682.1707430304&); /* Ruta de la imagen del icono */
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: 30px center; 
+          padding: 10px; 
+          background-color: black;
+          color: white;
+        }
+        .submit-google{
+          padding-right: 10px; /* Ajusta según sea necesario para dar espacio al icono */
+          background-image: url(https://cdn-icons-png.freepik.com/512/300/300221.png?ga=GA1.1.103940682.1707430304&); /* Ruta de la imagen del icono */
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: 30px center; 
+          padding: 10px; 
+        }
+        .submit-apple{
+          padding-right: 10px; /* Ajusta según sea necesario para dar espacio al icono */
+          background-image: url(https://cdn-icons-png.freepik.com/512/220/220220.png?ga=GA1.1.103940682.1707430304&); /* Ruta de la imagen del icono */
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: 30px center; 
+          padding: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header aria-label="Banner" role="banner">
+    <div class="banner">
+      <img src="img/spoti3.jpeg" alt="Company logo" width="150" height="50">
+    </div>
+  </header>
+    <div class="container"><br>
+        <h1>Inicia sesión en Spotify</h1>
+        <form action="">
+        	<div class="redes">
+                <input type="submit" class="submit-google" value="Continuar con Google">
+	        	<input type="submit" class="submit-facebook" value="Continuar con Facebook">
+	        	<input type="submit" class="submit-apple" value="Continuar con Apple">
+	        	<input type="submit" value="Continuar con número de telefono">
+        	</div>
+        	<hr>
+        	<div class="login">
+        		<label for="uname" style="display: block; text-align: left;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email o nombre de usuario</b></label><br>
+	            <input type="text" placeholder="Email o nombre de usuario" name="uname" style="background:black; color:white; border: 1px solid white;" required><br><br>
+
+	            <label for="psw" style="display: block; text-align: left;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña</b></label><br>
+	            <input type="password" placeholder="Contraseña" name="psw" style="background:black; color:white; border: 1px solid white;"required>
+
+                <div class="form-switch"><br>
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" style="background-color: #0BD51A;" checked >
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Recordarme</label>
+                </div><br>
+
+	            <input type="submit" value="Iniciar Sesión" style="background-color:#0BD51A; color: black;"><br><br>
+
+                    <form action="/api/password-reset" method="post">
+                        <a href="#3" class="boton">¿Has olvidado tu contraseña?</a>
+                    </form>
+                <hr><br>
+                <p>¿No tienes una cuenta?</p><a href="#3" class="boton">Registrate en Spotify</a><br>
+        	</div>
+            <div class="recaptcha-badge">
+                    <div class="recaptcha-badge__text">
+                        Este sitio está protegido por reCAPTCHA y se aplican la política de Privacidad y los Términos de Servicio de Google.
+                    </div>
+                </div>
+		    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" cross
+		        origin="anonymous">
+		    </script>
+		</form>
+	</div><br><br>
+</body>
+</html>
